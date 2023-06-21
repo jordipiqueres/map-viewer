@@ -1,0 +1,96 @@
+@import "node_modules/ol/ol.css";
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+#routing_nodes {
+  position: absolute;
+  top: 60px;
+  left: 5px;
+  width: 50px;
+  height: 40px;
+}
+
+#routing_free {
+  position: absolute;
+  top: 105px;
+  left: 5px;
+  width: 50px;
+  height: 40px;
+}
+
+
+#isocrona {
+  position: absolute;
+  top: 150px;
+  left: 5px;
+  min-width: 50px;
+  height: 40px;
+}
+
+#measure {
+  position: absolute;
+  top: 195px;
+  left: 5px;
+  min-width: 50px;
+  height: 40px;
+}
+
+#measureClear {
+  position: absolute;
+  top: 240px;
+  left: 5px;
+  min-width: 50px;
+  height: 40px;
+}
+
+#type {
+  position: absolute;
+  top: 285px;
+  left: 5px;
+  min-width: 50px;
+  height: 40px;
+}
+
+.ol-tooltip {
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  color: white;
+  padding: 4px 8px;
+  opacity: 0.7;
+  white-space: nowrap;
+  font-size: 12px;
+  cursor: default;
+  user-select: none;
+}
+.ol-tooltip-measure {
+  opacity: 1;
+  font-weight: bold;
+}
+.ol-tooltip-static {
+  background-color: #ffcc33;
+  color: black;
+  border: 1px solid white;
+}
+.ol-tooltip-measure:before,
+.ol-tooltip-static:before {
+  border-top: 6px solid rgba(0, 0, 0, 0.5);
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  margin-left: -7px;
+  left: 50%;
+}
+.ol-tooltip-static:before {
+  border-top-color: #ffcc33;
+}

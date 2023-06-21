@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using OpenLayers with Vite</title>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="originMarker"></div>
+    <div id="endMarker"></div>
+    <button id="routing_nodes">nodes</button>
+    <button id="routing_free">free</button>
+    <button id="isocrona">iso</button>
+    <button id="measure">measure</button>
+    <button id="measureClear">remove measures</button>
+    <form>
+      <label for="type">Measurement type &nbsp;</label>
+      <select id="type">
+        <option value="length">Length (LineString)</option>
+        <option value="area">Area (Polygon)</option>
+      </select>
+    </form>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

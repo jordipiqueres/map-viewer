@@ -1,0 +1,16 @@
+{
+  "name": "basemap",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "proxy": "http://localhost:3000",
+  "devDependencies": {
+    "vite": "^4.0.4"
+  },
+  "dependencies": {
+    "ol": "latest"
+  }
+}
