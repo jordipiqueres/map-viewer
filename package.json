@@ -8,7 +8,7 @@
   },
   "proxy": "http://localhost:3000",
   "devDependencies": {
-    "vite": "^4.0.4"
+    "vite": "^4.4.7"
   },
   "dependencies": {
     "ol": "latest"
